@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "355d5d2af647ceb3ced109fcb31fb316",
+    "revision": "af41e2f75bb0ee94231e4431c7924440",
     "url": "/FindTheFalcone/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FindTheFalcone/static/css/2.3cb76441.chunk.css"
   },
   {
-    "revision": "87a5ac59adcd8c076d74",
-    "url": "/FindTheFalcone/static/css/main.a94f2e2f.chunk.css"
+    "revision": "c1fc3e94d3fc0e113910",
+    "url": "/FindTheFalcone/static/css/main.d99fbcbc.chunk.css"
   },
   {
     "revision": "d1d6e4a6c1795908b9fa",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FindTheFalcone/static/js/2.6c216f1e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "87a5ac59adcd8c076d74",
+    "revision": "c1fc3e94d3fc0e113910",
     "url": "/FindTheFalcone/static/js/main.b65b948d.chunk.js"
   },
   {
