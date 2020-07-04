@@ -24,9 +24,9 @@ function IntroPage() {
           <p className="falcone-intro-main-subtext">King Shan received intelligence that Al Falcone is in hiding in one of these 6 planets.Donlon,Enchai,Jebing,Sapir,Lerbin & Pingasor.However he has limited resources at his disposal & can send his army to only 4 of these planets.</p>
           <h4 className="falcone-intro-main-sub">HELP HIM TO FIND FALCONE</h4>
           <div className="d-flex justify-content-center">
-            <Button type="primary">
+            {/* <Button type="primary">
               <Link to="/FindFalcone">START</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
