@@ -15,7 +15,7 @@ function App() {
       <div className="App-main">
 
         <Switch>
-          <Route path="/" exact>
+          <Route path="/">
             <IntroPage />
           </Route>
           <Route path="/FindFalcone" exact>
