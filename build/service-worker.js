@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/FindTheFalcone/precache-manifest.f36bcadddf206ba95b986791db7c2ed5.js"
+  "/FindTheFalcone/precache-manifest.af954f5c86231034985ce857ce352f38.js"
 );
 
 self.addEventListener('message', (event) => {
