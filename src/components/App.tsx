@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  HashRouter,
   BrowserRouter as Router,
   Switch,
   Route,
@@ -11,25 +12,23 @@ import FinishPage from './FinishPage';
 
 function App() {
   return (
-  // <Router>
-  //   <div className="App-main">
+    <HashRouter basename="/">
+      <div className="App-main">
 
-    //     <Switch>
-    //       <Route path="/">
-    //         <IntroPage />
-    //       </Route>
-    //       <Route path="/FindFalcone" exact>
-    //         <Selection />
-    //       </Route>
-    //       <Route path="/FindFalcon/result">
-    //         <FinishPage />
-    //       </Route>
-    //     </Switch>
-    //   </div>
-    // </Router>
-    <div>
-      <IntroPage />
-    </div>
+        <Switch>
+          <Route path="/" exact>
+            <IntroPage />
+          </Route>
+          <Route path="/FindFalcone" exact>
+            <Selection />
+          </Route>
+          <Route path="/FindFalcon/result">
+            <FinishPage />
+          </Route>
+        </Switch>
+      </div>
+    </HashRouter>
+
   );
 }
 export default App;

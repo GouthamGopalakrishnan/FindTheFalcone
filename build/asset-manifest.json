@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/FindTheFalcone/static/css/main.6655fc7a.chunk.css",
-    "main.js": "/FindTheFalcone/static/js/main.2271a7e4.chunk.js",
-    "main.js.map": "/FindTheFalcone/static/js/main.2271a7e4.chunk.js.map",
+    "main.css": "/FindTheFalcone/static/css/main.7b33f685.chunk.css",
+    "main.js": "/FindTheFalcone/static/js/main.e92ecc26.chunk.js",
+    "main.js.map": "/FindTheFalcone/static/js/main.e92ecc26.chunk.js.map",
     "runtime-main.js": "/FindTheFalcone/static/js/runtime-main.611c5616.js",
     "runtime-main.js.map": "/FindTheFalcone/static/js/runtime-main.611c5616.js.map",
-    "static/css/2.3cb76441.chunk.css": "/FindTheFalcone/static/css/2.3cb76441.chunk.css",
-    "static/js/2.08ff1021.chunk.js": "/FindTheFalcone/static/js/2.08ff1021.chunk.js",
-    "static/js/2.08ff1021.chunk.js.map": "/FindTheFalcone/static/js/2.08ff1021.chunk.js.map",
+    "static/js/2.ea27f11a.chunk.js": "/FindTheFalcone/static/js/2.ea27f11a.chunk.js",
+    "static/js/2.ea27f11a.chunk.js.map": "/FindTheFalcone/static/js/2.ea27f11a.chunk.js.map",
     "index.html": "/FindTheFalcone/index.html",
-    "precache-manifest.a4d9c5f29936d37e29abb2ee8e5dbece.js": "/FindTheFalcone/precache-manifest.a4d9c5f29936d37e29abb2ee8e5dbece.js",
+    "precache-manifest.df34ef33d647c071e49a24505da29eed.js": "/FindTheFalcone/precache-manifest.df34ef33d647c071e49a24505da29eed.js",
     "service-worker.js": "/FindTheFalcone/service-worker.js",
-    "static/css/2.3cb76441.chunk.css.map": "/FindTheFalcone/static/css/2.3cb76441.chunk.css.map",
-    "static/css/main.6655fc7a.chunk.css.map": "/FindTheFalcone/static/css/main.6655fc7a.chunk.css.map",
-    "static/js/2.08ff1021.chunk.js.LICENSE.txt": "/FindTheFalcone/static/js/2.08ff1021.chunk.js.LICENSE.txt",
+    "static/css/main.7b33f685.chunk.css.map": "/FindTheFalcone/static/css/main.7b33f685.chunk.css.map",
+    "static/js/2.ea27f11a.chunk.js.LICENSE.txt": "/FindTheFalcone/static/js/2.ea27f11a.chunk.js.LICENSE.txt",
     "static/media/Logo.png": "/FindTheFalcone/static/media/Logo.7e244568.png",
-    "static/media/FinishPage.css": "/FindTheFalcone/static/media/back.db7e644d.jpg"
+    "static/media/IntroPage.css": "/FindTheFalcone/static/media/back.db7e644d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.611c5616.js",
-    "static/css/2.3cb76441.chunk.css",
-    "static/js/2.08ff1021.chunk.js",
-    "static/css/main.6655fc7a.chunk.css",
-    "static/js/main.2271a7e4.chunk.js"
+    "static/js/2.ea27f11a.chunk.js",
+    "static/css/main.7b33f685.chunk.css",
+    "static/js/main.e92ecc26.chunk.js"
   ]
 }
