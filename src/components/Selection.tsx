@@ -49,33 +49,33 @@ const Selection = () => {
     dispatch(VehiclesApi());
   }, []);
 
-  const vehicleOnChange = (e: RadioChangeEvent) => {
-    const optionSelected = e.target.value;
-    const allSelectedPlanets = allVehicles.filter(
-      (vehicle) => vehicle.name === optionSelected,
-    );
-    const currentIndex = Number(e.target.name);
-    vehicleArray[currentIndex] = allSelectedPlanets[0];
-    setVehicleArray([...vehicleArray]);
-    console.log('selected Vehicles ::', vehicleArray);
-    const prevOption = selectedVehicle[currentIndex];
-    selectedVehicle[currentIndex] = optionSelected;
-    setVehicle([...selectedVehicle]);
-    calculateTime(currentIndex, prevOption, optionSelected);
-    if (prevOption != optionSelected && prevOption != undefined) {
-      const indexOfVehicle = allVehicles.map((e) => e.name).indexOf(prevOption);
-      allVehicles[indexOfVehicle].total_no = allVehicles[indexOfVehicle].total_no + 1;
-      const indexOfVehicle2 = allVehicles
-        .map((e) => e.name)
-        .indexOf(optionSelected);
-      allVehicles[indexOfVehicle2].total_no = allVehicles[indexOfVehicle2].total_no - 1;
-    } else {
-      const indexOfVehicle = allVehicles
-        .map((e) => e.name)
-        .indexOf(optionSelected);
-      allVehicles[indexOfVehicle].total_no = allVehicles[indexOfVehicle].total_no - 1;
-    }
-  };
+  // const vehicleOnChange = (e: RadioChangeEvent) => {
+  //   const optionSelected = e.target.value;
+  //   const allSelectedPlanets = allVehicles.filter(
+  //     (vehicle) => vehicle.name === optionSelected,
+  //   );
+  //   const currentIndex = Number(e.target.name);
+  //   vehicleArray[currentIndex] = allSelectedPlanets[0];
+  //   setVehicleArray([...vehicleArray]);
+  //   console.log('selected Vehicles ::', vehicleArray);
+  //   const prevOption = selectedVehicle[currentIndex];
+  //   selectedVehicle[currentIndex] = optionSelected;
+  //   setVehicle([...selectedVehicle]);
+  //   calculateTime(currentIndex, prevOption, optionSelected);
+  //   if (prevOption != optionSelected && prevOption != undefined) {
+  //     const indexOfVehicle = allVehicles.map((e) => e.name).indexOf(prevOption);
+  //     allVehicles[indexOfVehicle].total_no = allVehicles[indexOfVehicle].total_no + 1;
+  //     const indexOfVehicle2 = allVehicles
+  //       .map((e) => e.name)
+  //       .indexOf(optionSelected);
+  //     allVehicles[indexOfVehicle2].total_no = allVehicles[indexOfVehicle2].total_no - 1;
+  //   } else {
+  //     const indexOfVehicle = allVehicles
+  //       .map((e) => e.name)
+  //       .indexOf(optionSelected);
+  //     allVehicles[indexOfVehicle].total_no = allVehicles[indexOfVehicle].total_no - 1;
+  //   }
+  // };
   const calculateTime = (
     index: number,
     previousOption: string,
@@ -114,11 +114,12 @@ const Selection = () => {
       (planet) => planet.name === selectedPlanet,
     );
     const index = currentIndex;
+    setVehicleArray(vehicleArray.splice(0, index));
     planetArray[index] = planetDistance[0];
     setArray([...planetArray]);
     selectedPlanetsArray[index] = selectedPlanet;
     setSelectedPlanetsArray([...selectedPlanetsArray]);
-    console.log('parent Componet ::', value, selectedPlanetsArray);
+    console.log('parent Componet ::', value, selectedPlanetsArray, selectedVehicle);
   };
 
   const vehicleOnChangeinSelectPlanet = (e: RadioChangeEvent) => {
@@ -165,20 +166,20 @@ const Selection = () => {
               </p>
             </div>
           </Header>
-          <Content style={{ padding: '0 50px' }}>
+          <Content>
             <div className="site-layout-content falcone-row-primary">
               <h5 className="falcone-text text-center">
                 Select 4 planets and the space vehicles to search in these
                 planets
               </h5>
-              <p className="float-left">
+              <p className="float-left falcone-time">
                 TIME TAKEN:
                 {time}
               </p>
               <br />
               <br />
               <div className="row">
-                <div className="col">
+                <div className="col-6 col-sm">
                   <SelectPlanet
                     index={0}
                     onSelectPlanetChange={onSelectChange}
@@ -187,7 +188,7 @@ const Selection = () => {
                     handleRadioChange={vehicleOnChangeinSelectPlanet}
                   />
                 </div>
-                <div className="col falcone-col">
+                <div className="col-6 col-sm falcone-col">
                   <SelectPlanet
                     index={1}
                     onSelectPlanetChange={onSelectChange}
@@ -196,7 +197,7 @@ const Selection = () => {
                     handleRadioChange={vehicleOnChangeinSelectPlanet}
                   />
                 </div>
-                <div className="col">
+                <div className="col-6 col-sm">
                   <SelectPlanet
                     index={2}
                     onSelectPlanetChange={onSelectChange}
@@ -205,7 +206,7 @@ const Selection = () => {
                     handleRadioChange={vehicleOnChangeinSelectPlanet}
                   />
                 </div>
-                <div className="col">
+                <div className="col-6 col-sm">
                   <SelectPlanet
                     index={3}
                     onSelectPlanetChange={onSelectChange}

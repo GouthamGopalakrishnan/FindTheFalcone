@@ -1,36 +1,5 @@
 @import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
-.App .row {
-  width: 100%;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 .falcone-main-layout .layout{
   height: 100vh;
   font-family: 'Abel', sans-serif;
@@ -38,6 +7,9 @@
   background: url('./back.jpg') no-repeat;
   z-index: 1000;
   
+}
+.falcone-main-layout .ant-layout-content {
+  padding: 0 50px;
 }
 .falcone-main-layout .ant-layout-header {
   height: fit-content;
@@ -87,7 +59,7 @@
   margin: 2em 12em ;
   padding: 1em 2em;
 }
-.falcone-main-layout .col {
+.falcone-main-layout .col-sm {
   margin: 1em;
   padding: 1em;
   text-align: left;
@@ -144,13 +116,81 @@
   border-color: rgb(188, 188, 188,.7);
   color: black;
 }
+.falcone-main-layout .ant-select-arrow {
+  color: black;
+}
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  .falcone-main-layout .falcone-logo {
+    width: 3em;
+    height: 3em;
+    margin-top: 1em;
+    float: left;    
   }
-  to {
-    transform: rotate(360deg);
+  .falcone-main-layout .finding-falcone {
+    color: white;
+    float: left;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-top: 1.8em; 
+    font-weight: bold;
+  }
+  .falcone-main-layout .layout{
+    height: 100vh;
+    font-family: 'Abel', sans-serif;
+    color: white;
+    background: url('./back.jpg') no-repeat;
+    z-index: 1000;
+    font-size: .8em;
+    
+  }
+  .falcone-main-layout .finding-falcone-restart-link{
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: .5em;
+    /* padding-right: 4em; */
+  }
+  .falcone-main-layout .falcone-row-primary {
+    background-color: rgb(0, 0, 0,.3);
+    margin: 0em 0em ;
+    padding: 0em 0em;
+  }
+  .falcone-main-layout .finding-falcone-restart{
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;
+    padding-right: 1em;
+    font-weight: bold;
+  }
+  .falcone-main-layout .falcone-text {
+    color: white;
+    font-size: 1em;
+    margin-top: 2em;
+    padding-top: 2em;
+  }
+  .falcone-main-layout .row {
+    background-color: rgb(0, 0, 0,.3);
+    margin: 0em;
+    padding: 0em;
+  }
+
+  .falcone-main-layout .ant-layout-content {
+    padding: 0 .5em ;
+  }
+  .falcone-main-layout .col-6 {
+    margin: 0em;
+    padding: 1em;
+    text-align: left;
+    background-color: rgb(0, 0, 0,.3);
+    color: white;
+    width: 100%;
+    
+  }
+  .falcone-main-layout .falcone-time{
+    font-size: 0.6em;
+    padding-left: 2em;
   }
 }
+
+

@@ -1,3 +1,17 @@
 .falcone-main-layout .ant-select {
     width:100%;
 }
+@media only screen and (max-width: 768px){
+    .falcone-main-layout .falcone-planet-h5 {
+        font-size: 1em;
+    }
+    .falcone-main-layout .falcone-selectPlanets {
+        font-size: 1em;
+    }
+    .falcone-main-layout .falcone-selectSpaceShip{
+        font-size: 1em;
+    }
+    .falcone-main-layout .ant-radio-wrapper {
+        font-size: 1em;
+    }
+}

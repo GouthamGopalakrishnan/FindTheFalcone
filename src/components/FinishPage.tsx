@@ -33,7 +33,7 @@ const FinishPage = () => {
               </p>
             </div>
           </Header>
-          <Content style={{ padding: '0 50px' }}>
+          <Content>
             <div className="row">
               <div className="col falcon-finish-col">
                 <h2 className="falcon-finish-status">
