@@ -123,17 +123,17 @@
 
 @media only screen and (max-width: 768px) {
   .falcone-main-layout .falcone-logo {
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     margin-top: 1em;
     float: left;    
   }
   .falcone-main-layout .finding-falcone {
     color: white;
     float: left;
-    font-size: 1em;
+    font-size: 1.8em;
     letter-spacing: 2px;
-    margin-top: 1.8em; 
+    margin-top: 1em; 
     font-weight: bold;
   }
   .falcone-main-layout .layout{
@@ -159,8 +159,10 @@
   .falcone-main-layout .finding-falcone-restart{
     color: white;
     font-family: 'Abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    /* padding-top: .5em; */
     padding-right: 1em;
+    margin-bottom: 0em;
     font-weight: bold;
   }
   .falcone-main-layout .falcone-text {
@@ -190,6 +192,11 @@
   .falcone-main-layout .falcone-time{
     font-size: 0.6em;
     padding-left: 2em;
+  }
+  .falcone-main-layout .ant-layout-footer{
+    background-color: rgb(0, 0, 0,.3);
+    color: white;
+    font-size: 1.3em;
   }
 }
 

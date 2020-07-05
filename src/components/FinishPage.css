@@ -100,7 +100,7 @@
     font-size: 1.3em;
   }
   .falcon-finish-main .row {
-    background-color: rgb(0, 0, 0,.3);
+    /* background-color: rgb(0, 0, 0,.3); */
     margin: 0em;
     padding: 0em;
   }
@@ -112,17 +112,17 @@
       align-content: center;
   }
     .falcon-finish-main .falcone-logo {
-      width: 3em;
-      height: 3em;
+      width: 4em;
+      height: 4em;
       margin-top: 1em;
       float: left;    
     }
     .falcon-finish-main .finding-falcone {
       color: white;
       float: left;
-      font-size: 1em;
+      font-size: 2em;
       letter-spacing: 2px;
-      margin-top: 1.8em; 
+      margin-top: 1em; 
       font-weight: bold;
     }
     .falcon-finish-main .layout{
@@ -148,13 +148,14 @@
     .falcon-finish-main .finding-falcone-restart{
       color: white;
       font-family: 'Abel', sans-serif;
-      font-size: 1em;
-      padding-right: 2em;
+      font-size: 1.8em;
+      padding-right: 1em;
       font-weight: bold;
+      margin-bottom: 0em;
     }
 
     .falcon-finish-main .row {
-      background-color: rgb(0, 0, 0,.3);
+      /* background-color: rgb(0, 0, 0,.3); */
       margin: 0em;
       padding: 0em;
     }
